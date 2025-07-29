@@ -2,10 +2,10 @@
 // Configuración de la conexión a la base de datos
 
 // 1. Define tus credenciales
-$servidor = "localhost";
-$usuario = "root";
-$password = "";
-$base_de_datos = "vinculacion_rh";
+$servidor = "vinculacionth.electrocreditosdelcauca.com";
+$usuario = "electroc_webmast";
+$password = "4Rxf1vNLYW_w";
+$base_de_datos = "electroc_vinculacionth";
 
 // 2. Crear la conexión
 $conexion = new mysqli($servidor, $usuario, $password, $base_de_datos);
