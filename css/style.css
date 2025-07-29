@@ -1,0 +1,132 @@
+/* 1. Variables de Color y Tipografía */
+:root {
+    --color-fondo: #f4f7f9;
+    --color-tarjeta: #ffffff;
+    --color-texto: #212529;
+    --color-texto-secundario: #6c757d;
+    --color-borde: #dee2e6;
+    --color-primario: #0d6efd;
+    --color-pastel-navbar: #EAEBED; /* Color pastel más claro (Gris Perla) */
+    --color-texto-navbar: #343a40; /* Color de texto oscuro para buen contraste */
+    --fuente-principal: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif; /* Fuente más moderna */
+}
+
+/* 2. Estilos Generales del Body */
+body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+}
+
+/* 3. Barra de Navegación (ACTUALIZADA) */
+.navbar-custom {
+    background-color: var(--color-pastel-navbar);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-logo {
+    height: 100px; /* Logo más pequeño */
+}
+
+/* Estilos para los enlaces del menú */
+.navbar-custom .nav-link {
+    color: var(--color-texto-navbar);
+    font-weight: 500;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Transición suave */
+    border-radius: 6px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Efecto Hoover notable */
+.navbar-custom .nav-link:hover {
+    color: var(--color-primario);
+    background-color: rgba(13, 110, 253, 0.05); /* Un fondo azul muy sutil */
+}
+
+/* 4. Estructura Principal y Títulos */
+.main-container {
+    max-width: 800px; /* Ancho máximo para el contenido, lo centra */
+    margin: 2rem auto; /* Centra el contenedor y le da espacio arriba/abajo */
+}
+
+.form-container {
+    background-color: var(--color-tarjeta);
+    padding: 2.5rem; /* Más espaciado interno */
+    border-radius: 8px; /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+    font-size: 1.75rem; /* Tamaño de título principal más controlado */
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-texto-secundario);
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 0.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 5. Estilos para Fases y Formularios */
+.fase-item {
+    padding: 1.5rem 0; /* Solo espaciado vertical */
+    border-bottom: 1px solid var(--color-borde); /* Separador entre fases */
+}
+
+.fase-item:last-child {
+    border-bottom: none; /* El último item no necesita separador */
+    padding-bottom: 0.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 6px;
+    border-color: var(--color-borde);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15); /* Sombra de foco más sutil */
+}
+
+/* 6. Estilos para Bitácora y Dashboard */
+.table {
+    border: 1px solid var(--color-borde);
+    background-color: var(--color-tarjeta);
+}
+
+/* 7. Estilos para las Tarjetas del Dashboard */
+.dashboard-card {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: inherit;        /* Hereda el color de texto normal */
+    display: block;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dashboard-card .card {
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada */
+}
+
+.card-icon {
+    font-size: 3rem; /* Tamaño grande para el ícono */
+    color: var(--color-primario); /* Usa el color primario (azul) */
+}

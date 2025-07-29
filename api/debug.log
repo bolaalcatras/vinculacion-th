@@ -1,0 +1,37 @@
+--- INICIO DE EJECUCIÓN 2025-07-23 06:48:18 ---
+Datos recibidos: Array
+(
+    [cedula] => 10300964
+    [nombre] => Julian Narvaez
+    [empresa] => 1
+    [zona] => 3
+    [regional] => 8
+    [fases] => Array
+        (
+            [1] => Array
+                (
+                    [cumplio] => on
+                    [fecha] => 2025-07-23
+                    [descripcion] => Listo
+                )
+
+            [2] => Array
+                (
+                    [fecha] => 
+                    [descripcion] => 
+                )
+
+        )
+
+)
+
+Aspirante insertado con ID: 1
+Procesando fase maestra ID: 1
+Procesando fase maestra ID: 2
+Procesando fase maestra ID: 3
+Procesando fase maestra ID: 4
+Procesando fase maestra ID: 5
+Procesando fase maestra ID: 6
+Procesando fase maestra ID: 7
+Procesando fase maestra ID: 8
+Procesando fase maestra ID: 9
